@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculadora">
+            <object data="functions_24.svg" type="image/svg+xml"></object>
+            <h1>Calculadora</h1>
+            <input id="num1" type="number" />
+            <input id="num2" type="number" />
+            <div class="container-btn">
+                <button id="soma" onclick="calc('+')">+</button>
+                <button id="subtracao" onclick="calc('-')">-</button>
+                <button id="mult" onclick="calc('*')">*</button>
+                <button id="divisao" onclick="calc('/')">/</button>
+            </div>
+            <input id="output" readonly />
+        </div>
+
+        <div class="history">
+            <div class="history-title">
+                <h1>Histórico</h1>
+            </div>
+            <div class="last-operations">
+                Últimas 10 operações:
+                <div id="history">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
